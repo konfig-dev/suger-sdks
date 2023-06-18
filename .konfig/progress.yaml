@@ -1,0 +1,434 @@
+examples: {}
+examples_2: {}
+operationIds:
+  /org/{orgId}/apiClient:
+    get: Api_list
+    post: Api_create
+  /org/{orgId}/apiClient/{apiClientId}:
+    get: Api_get
+  /org/{orgId}/buyer:
+    get: Buyer_listByOrganization
+  /org/{orgId}/buyer/{buyerId}:
+    get: Buyer_get
+    patch: Buyer_update
+  /org/{orgId}/buyer/{buyerId}/entitlement:
+    get: Entitlement_listByBuyer
+  /org/{orgId}/draftOffer:
+    post: Offer_draft
+  /org/{orgId}/entitlement:
+    get: Entitlement_list
+  /org/{orgId}/entitlement/{entitlementId}:
+    get: Entitlement_get
+  /org/{orgId}/entitlement/{entitlementId}/addCredit:
+    post: Entitlement_addCredit
+  /org/{orgId}/entitlement/{entitlementId}/entitlementName:
+    patch: Entitlement_updateName
+  /org/{orgId}/entitlement/{entitlementId}/entitlementTerm:
+    get: EntitlementTerm_list
+  /org/{orgId}/entitlement/{entitlementId}/entitlementTerm/{entitlementTermId}:
+    get: EntitlementTerm_get
+  /org/{orgId}/entitlement/{entitlementId}/metaInfo:
+    patch: Entitlement_updateMetaInfo
+  /org/{orgId}/entitlement/{entitlementId}/usageRecordGroup:
+    post: Metering_reportUsageRecordGroup
+  /org/{orgId}/integration:
+    get: Integration_listByOrganization
+    post: Integration_create
+  /org/{orgId}/integration/{partner}/{service}:
+    delete: Integration_delete
+    get: Integration_get
+    patch: Integration_update
+  /org/{orgId}/integration/{partner}/{service}/verify:
+    post: Integration_verify
+  /org/{orgId}/offer:
+    get: Offer_listByOrganization
+    post: Offer_create
+  /org/{orgId}/offer/{offerId}:
+    delete: Offer_delete
+    get: Offer_get
+  /org/{orgId}/offer/{offerId}/cancel:
+    post: Offer_cancel
+  /org/{orgId}/offer/{offerId}/entitlement:
+    get: Entitlement_listByOffer
+  /org/{orgId}/offer/{offerId}/eula:
+    get: Offer_getEula
+  /org/{orgId}/offer/{offerId}/metaInfo:
+    patch: Offer_updateMetaInfo
+  /org/{orgId}/operation:
+    get: Operation_list
+  /org/{orgId}/partner/{partner}/buyer:
+    get: Buyer_listByPartner
+  /org/{orgId}/partner/{partner}/entitlement:
+    get: Entitlement_listByPartner
+  /org/{orgId}/partner/{partner}/offer:
+    get: Offer_listByPartner
+  /org/{orgId}/partner/{partner}/product:
+    get: Product_listByPartner
+  /org/{orgId}/partner/{partner}/revenueRecord:
+    get: Report_listRevenueRecords
+  /org/{orgId}/partner/{partner}/revenueRecordDetail:
+    get: Report_listRevenueRecordDetails
+  /org/{orgId}/partner/{partner}/usageMeteringDailyRecord:
+    get: Report_listUsageMeteringDailyRecords
+  /org/{orgId}/partner/{partner}/usageMeteringDailyVerification:
+    get: Report_listUsageMeteringDailyVerifications
+  /org/{orgId}/product:
+    get: Product_listByOrganization
+  /org/{orgId}/product/{productId}:
+    delete: Product_delete
+    get: Product_get
+    patch: Product_update
+  /org/{orgId}/product/{productId}/dimension:
+    get: Product_listMeteringDimensions
+  /org/{orgId}/product/{productId}/entitlement:
+    get: Entitlement_listByProduct
+  /org/{orgId}/product/{productId}/offer:
+    get: Offer_listByProduct
+  /org/{orgId}/revenueReport:
+    post: Report_getRevenueReport
+  /org/{orgId}/usageMeteringConfigInfo:
+    get: Metering_getUsageConfigInfo
+    patch: Metering_updateUsageConfigInfo
+  /org/{orgId}/usageRecordGroup:
+    get: Metering_listUsageRecordGroups
+  /org/{orgId}/usageRecordGroup/{usageRecordGroupId}:
+    delete: Metering_deleteUsageRecordGroups
+    get: Metering_getUsageRecordGroups
+  /org/{orgId}/usageRecordReport:
+    get: Metering_listUsageRecordReports
+  /org/{orgId}/usageRecordReport/{usageRecordReportId}:
+    get: Metering_getUsageRecordReport
+  /public/apiClient/accessToken:
+    post: Api_getAccessToken
+operationTags: {}
+renameTags: {}
+requestSchemaNames: {}
+responseDescriptions: {}
+responseSchemaNames:
+  /org/{orgId}/apiClient:
+    get:
+      '200':
+        application/json: ApiListResponse
+      '400':
+        application/json: ApiList400Response
+      '500':
+        application/json: ApiList500Response
+    post:
+      '400':
+        application/json: ApiCreateResponse
+      '500':
+        application/json: ApiCreate500Response
+  /org/{orgId}/apiClient/{apiClientId}:
+    get:
+      '400':
+        application/json: ApiGetResponse
+      '500':
+        application/json: ApiGet500Response
+  /org/{orgId}/buyer:
+    get:
+      '200':
+        application/json: BuyerListByOrganizationResponse
+  /org/{orgId}/buyer/{buyerId}/entitlement:
+    get:
+      '200':
+        application/json: EntitlementListByBuyerResponse
+      '400':
+        application/json: EntitlementListByBuyer400Response
+      '500':
+        application/json: EntitlementListByBuyer500Response
+  /org/{orgId}/draftOffer:
+    post:
+      '400':
+        application/json: OfferDraftResponse
+      '500':
+        application/json: OfferDraft500Response
+  /org/{orgId}/entitlement:
+    get:
+      '200':
+        application/json: EntitlementListResponse
+      '400':
+        application/json: EntitlementList400Response
+      '500':
+        application/json: EntitlementList500Response
+  /org/{orgId}/entitlement/{entitlementId}:
+    get:
+      '400':
+        application/json: EntitlementGetResponse
+      '500':
+        application/json: EntitlementGet500Response
+  /org/{orgId}/entitlement/{entitlementId}/addCredit:
+    post:
+      '400':
+        application/json: EntitlementAddCreditResponse
+      '500':
+        application/json: EntitlementAddCredit500Response
+  /org/{orgId}/entitlement/{entitlementId}/entitlementName:
+    patch:
+      '400':
+        application/json: EntitlementUpdateNameResponse
+      '500':
+        application/json: EntitlementUpdateName500Response
+  /org/{orgId}/entitlement/{entitlementId}/entitlementTerm:
+    get:
+      '200':
+        application/json: EntitlementTermListResponse
+      '400':
+        application/json: EntitlementTermList400Response
+      '500':
+        application/json: EntitlementTermList500Response
+  /org/{orgId}/entitlement/{entitlementId}/entitlementTerm/{entitlementTermId}:
+    get:
+      '400':
+        application/json: EntitlementTermGetResponse
+      '500':
+        application/json: EntitlementTermGet500Response
+  /org/{orgId}/entitlement/{entitlementId}/metaInfo:
+    patch:
+      '400':
+        application/json: EntitlementUpdateMetaInfoResponse
+      '500':
+        application/json: EntitlementUpdateMetaInfo500Response
+  /org/{orgId}/entitlement/{entitlementId}/usageRecordGroup:
+    post:
+      '400':
+        application/json: MeteringReportUsageRecordGroupResponse
+      '409':
+        application/json: MeteringReportUsageRecordGroup409Response
+      '500':
+        application/json: MeteringReportUsageRecordGroup500Response
+  /org/{orgId}/integration:
+    get:
+      '200':
+        application/json: IntegrationListByOrganizationResponse
+    post:
+      '400':
+        application/json: IntegrationCreateResponse
+      '500':
+        application/json: IntegrationCreate500Response
+  /org/{orgId}/integration/{partner}/{service}:
+    delete:
+      '200':
+        application/json: IntegrationDeleteResponse
+    get:
+      '404':
+        application/json: IntegrationGetResponse
+    patch:
+      '400':
+        application/json: IntegrationUpdateResponse
+      '500':
+        application/json: IntegrationUpdate500Response
+  /org/{orgId}/integration/{partner}/{service}/verify:
+    post:
+      '200':
+        application/json: IntegrationVerifyResponse
+  /org/{orgId}/offer:
+    get:
+      '200':
+        application/json: OfferListByOrganizationResponse
+      '400':
+        application/json: OfferListByOrganization400Response
+      '500':
+        application/json: OfferListByOrganization500Response
+    post:
+      '400':
+        application/json: OfferCreateResponse
+      '500':
+        application/json: OfferCreate500Response
+  /org/{orgId}/offer/{offerId}:
+    delete:
+      '200':
+        application/json: OfferDeleteResponse
+      '400':
+        application/json: OfferDelete400Response
+      '500':
+        application/json: OfferDelete500Response
+    get:
+      '400':
+        application/json: OfferGetResponse
+      '500':
+        application/json: OfferGet500Response
+  /org/{orgId}/offer/{offerId}/cancel:
+    post:
+      '200':
+        application/json: OfferCancelResponse
+      '400':
+        application/json: OfferCancel400Response
+      '500':
+        application/json: OfferCancel500Response
+  /org/{orgId}/offer/{offerId}/entitlement:
+    get:
+      '200':
+        application/json: EntitlementListByOfferResponse
+      '400':
+        application/json: EntitlementListByOffer400Response
+      '500':
+        application/json: EntitlementListByOffer500Response
+  /org/{orgId}/offer/{offerId}/eula:
+    get:
+      '200':
+        application/json: OfferGetEulaResponse
+      '400':
+        application/json: OfferGetEula400Response
+      '500':
+        application/json: OfferGetEula500Response
+  /org/{orgId}/offer/{offerId}/metaInfo:
+    patch:
+      '400':
+        application/json: OfferUpdateMetaInfoResponse
+      '500':
+        application/json: OfferUpdateMetaInfo500Response
+  /org/{orgId}/operation:
+    get:
+      '200':
+        application/json: OperationListResponse
+  /org/{orgId}/partner/{partner}/buyer:
+    get:
+      '200':
+        application/json: BuyerListByPartnerResponse
+      '400':
+        application/json: BuyerListByPartner400Response
+      '500':
+        application/json: BuyerListByPartner500Response
+  /org/{orgId}/partner/{partner}/entitlement:
+    get:
+      '200':
+        application/json: EntitlementListByPartnerResponse
+      '400':
+        application/json: EntitlementListByPartner400Response
+      '500':
+        application/json: EntitlementListByPartner500Response
+  /org/{orgId}/partner/{partner}/offer:
+    get:
+      '200':
+        application/json: OfferListByPartnerResponse
+      '400':
+        application/json: OfferListByPartner400Response
+      '500':
+        application/json: OfferListByPartner500Response
+  /org/{orgId}/partner/{partner}/product:
+    get:
+      '200':
+        application/json: ProductListByPartnerResponse
+  /org/{orgId}/partner/{partner}/revenueRecord:
+    get:
+      '400':
+        application/json: ReportListRevenueRecordsResponse
+      '500':
+        application/json: ReportListRevenueRecords500Response
+  /org/{orgId}/partner/{partner}/revenueRecordDetail:
+    get:
+      '400':
+        application/json: ReportListRevenueRecordDetailsResponse
+      '500':
+        application/json: ReportListRevenueRecordDetails500Response
+  /org/{orgId}/partner/{partner}/usageMeteringDailyRecord:
+    get:
+      '400':
+        application/json: ReportListUsageMeteringDailyRecordsResponse
+      '500':
+        application/json: ReportListUsageMeteringDailyRecords500Response
+  /org/{orgId}/partner/{partner}/usageMeteringDailyVerification:
+    get:
+      '400':
+        application/json: ReportListUsageMeteringDailyVerificationsResponse
+      '500':
+        application/json: ReportListUsageMeteringDailyVerifications500Response
+  /org/{orgId}/product:
+    get:
+      '200':
+        application/json: ProductListByOrganizationResponse
+  /org/{orgId}/product/{productId}:
+    delete:
+      '200':
+        application/json: ProductDeleteResponse
+  /org/{orgId}/product/{productId}/dimension:
+    get:
+      '200':
+        application/json: ProductListMeteringDimensionsResponse
+  /org/{orgId}/product/{productId}/entitlement:
+    get:
+      '200':
+        application/json: EntitlementListByProductResponse
+      '400':
+        application/json: EntitlementListByProduct400Response
+      '500':
+        application/json: EntitlementListByProduct500Response
+  /org/{orgId}/product/{productId}/offer:
+    get:
+      '200':
+        application/json: OfferListByProductResponse
+      '400':
+        application/json: OfferListByProduct400Response
+      '500':
+        application/json: OfferListByProduct500Response
+  /org/{orgId}/revenueReport:
+    post:
+      '400':
+        application/json: ReportGetRevenueReportResponse
+      '500':
+        application/json: ReportGetRevenueReport500Response
+  /org/{orgId}/usageMeteringConfigInfo:
+    get:
+      '400':
+        application/json: MeteringGetUsageConfigInfoResponse
+      '500':
+        application/json: MeteringGetUsageConfigInfo500Response
+    patch:
+      '400':
+        application/json: MeteringUpdateUsageConfigInfoResponse
+      '500':
+        application/json: MeteringUpdateUsageConfigInfo500Response
+  /org/{orgId}/usageRecordGroup:
+    get:
+      '400':
+        application/json: MeteringListUsageRecordGroupsResponse
+      '500':
+        application/json: MeteringListUsageRecordGroups500Response
+  /org/{orgId}/usageRecordGroup/{usageRecordGroupId}:
+    delete:
+      '400':
+        application/json: MeteringDeleteUsageRecordGroupsResponse
+      '500':
+        application/json: MeteringDeleteUsageRecordGroups500Response
+    get:
+      '400':
+        application/json: MeteringGetUsageRecordGroupsResponse
+      '500':
+        application/json: MeteringGetUsageRecordGroups500Response
+  /org/{orgId}/usageRecordReport:
+    get:
+      '400':
+        application/json: MeteringListUsageRecordReportsResponse
+      '500':
+        application/json: MeteringListUsageRecordReports500Response
+  /org/{orgId}/usageRecordReport/{usageRecordReportId}:
+    get:
+      '400':
+        application/json: MeteringGetUsageRecordReportResponse
+      '500':
+        application/json: MeteringGetUsageRecordReport500Response
+securityParameters:
+  buyerId:
+    query: false
+  crmOpportunityId:
+    query: false
+  endDate:
+    query: false
+  entitlementId:
+    query: false
+  limit:
+    query: false
+  offerId:
+    query: false
+  offset:
+    query: false
+  partner:
+    query: false
+  partnerOpportunityId:
+    query: false
+  productId:
+    query: false
+  startDate:
+    query: false
+  type:
+    query: false

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://unpkg.com/konfig-lib@latest/konfig-yaml.schema.json
+
+outputDirectory: /tmp/suger-sdks-out
+specPath: swagger-fixed.json
+specRemotePath: https://apidoc.suger.io/swagger/swagger.json
+specInputPath: swagger.json
+generators:
+  java:
+    version: 1.0.0
+    groupId: io.suger
+    artifactId: suger-java-sdk
+    outputDirectory: java
+    git:
+      userId: konfig-dev
+      repoId: suger-sdks/tree/main/java
+  python:
+    version: 1.0.0
+    packageName: suger_client
+    projectName: suger-python-sdk
+    outputDirectory: python
+    clientName: Suger
+    git:
+      userId: konfig-dev
+      repoId: suger-sdks/tree/main/python
+  typescript:
+    version: 1.0.0
+    npmName: suger-typescript-sdk
+    outputDirectory: typescript
+    clientName: Suger
+    git:
+      userId: konfig-dev
+      repoId: suger-sdks/tree/main/typescript
