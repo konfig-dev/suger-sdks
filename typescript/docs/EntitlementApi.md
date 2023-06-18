@@ -1,6 +1,6 @@
 # EntitlementApi
 
-All URIs are relative to *http://https://api.suger.cloud*
+All URIs are relative to *https://api.suger.cloud*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -29,8 +29,8 @@ Add the credit amount to the given Entitlement. The credit amount is accumulated
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -88,8 +88,8 @@ Get the entitlement by ID
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -143,8 +143,8 @@ List all entitlements under the organization
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -196,8 +196,8 @@ List all entitlements of the given buyer
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -251,8 +251,8 @@ List all entitlements under the given offer
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -306,8 +306,8 @@ List all entitlements under the given partner
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -361,8 +361,8 @@ List all entitlements under the given product
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -416,8 +416,8 @@ Update the meta info of the given entitlement.
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -472,8 +472,8 @@ Update the name of the given Entitlement
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 

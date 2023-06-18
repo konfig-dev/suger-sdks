@@ -12,7 +12,7 @@
   },
   "servers": [
     {
-      "url": "//https://api.suger.cloud"
+      "url": "https://api.suger.cloud"
     }
   ],
   "tags": [

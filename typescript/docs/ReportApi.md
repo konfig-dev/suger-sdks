@@ -1,6 +1,6 @@
 # ReportApi
 
-All URIs are relative to *http://https://api.suger.cloud*
+All URIs are relative to *https://api.suger.cloud*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,8 +25,8 @@ Get the revenue report of the given organization, product, entitlement, or buyer
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -83,8 +83,8 @@ list the raw revenue record details for the given organization, product, entitle
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -146,8 +146,8 @@ list the revenue records for the given organization, product, entitlement, or bu
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -208,8 +208,8 @@ list the daily records of the usage metering from the cloud marketplace for the 
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -271,8 +271,8 @@ list the daily verifications between the usage records reported to cloud marketp
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 

@@ -24,8 +24,8 @@ in client-side browser code is not recommended as you would expose security cred
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -39,7 +39,7 @@ console.log(createResponse);
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://https://api.suger.cloud*
+All URIs are relative to *https://api.suger.cloud*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

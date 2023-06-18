@@ -1,6 +1,6 @@
 # EntitlementTermApi
 
-All URIs are relative to *http://https://api.suger.cloud*
+All URIs are relative to *https://api.suger.cloud*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,8 +22,8 @@ Get the entitlement term by ID
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -79,8 +79,8 @@ List all Entitlement Terms of the given Entitlement
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 

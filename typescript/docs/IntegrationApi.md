@@ -1,6 +1,6 @@
 # IntegrationApi
 
-All URIs are relative to *http://https://api.suger.cloud*
+All URIs are relative to *https://api.suger.cloud*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,8 +26,8 @@ For each organization, partner & service, there should be at most one integratio
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -84,8 +84,8 @@ delete the integration for the given orgId, partner and service.
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -140,8 +140,8 @@ Get the integration for the given organization, partner & service.
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -197,8 +197,8 @@ List all integrations for the given organization.
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -249,8 +249,8 @@ Update the given integration.
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
@@ -313,8 +313,8 @@ Verify the given integration, check whether it works correctly.
 import { Suger } from "suger-typescript-sdk";
 
 const suger = new Suger({
-  // Defining the base path is optional and defaults to http://https://api.suger.cloud
-  // basePath: "http://https://api.suger.cloud",
+  // Defining the base path is optional and defaults to https://api.suger.cloud
+  // basePath: "https://api.suger.cloud",
   apiKey: "API_KEY",
 });
 
