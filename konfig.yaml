@@ -6,6 +6,7 @@ specRemotePath: https://apidoc.suger.io/swagger/swagger.json
 specInputPath: swagger.json
 generators:
   java:
+    disabled: true
     version: 1.0.0
     groupId: io.suger
     artifactId: suger-java-sdk
@@ -14,6 +15,7 @@ generators:
       userId: konfig-dev
       repoId: suger-sdks/tree/main/java
   python:
+    disabled: true
     version: 1.0.0
     packageName: suger_client
     projectName: suger-python-sdk
