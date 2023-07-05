@@ -11,11 +11,11 @@ generators:
     groupId: io.suger
     artifactId: suger-java-sdk
     outputDirectory: java
+    clientName: Suger
     git:
       userId: konfig-dev
       repoId: suger-sdks/tree/main/java
   python:
-    disabled: true
     version: 1.0.0
     packageName: suger_client
     projectName: suger-python-sdk
